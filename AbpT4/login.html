@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AbpT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AbpT</h1>
+        </div>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Welcome To AbpT</h2>
+            <p>Now with the annual before-pregnancy test, any couple can know every detail about their baby before the occurrence of pregnancy only by entering a few personal measurements.</p>
+        </section>
+        <section>
+            <form id="login-form" onsubmit="validateLoginForm(); return false;">
+                <h2>Login</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+                <p class="error" id="error-msg"></p>
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© All rights are preserved for Dr.I T.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

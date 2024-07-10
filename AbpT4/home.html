@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbpT - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AbpT</h1>
+        </div>
+        <div class="user-info">
+            <div class="user-box">
+                <span id="user-initials">JD</span>
+                <span id="user-full-name">John Doe</span> <!-- Replace with dynamic user data -->
+                <i class="fas fa-chevron-down" id="dropdown-arrow"></i>
+            </div>
+            <div class="dropdown-content" id="dropdown-content">
+                <p id="user-email">john.doe@example.com</p>
+                <a href="profile.html" class="profile-link">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="home-info">
+            <div class="info-container">
+                <h2>With AbpT you can see your future</h2>
+                <p>Any couple going to have a baby, you can send to us a photo of the couple together, age, weight, and height
+                    then within a week, we will give you a full report including
+                    full description of the baby you are going to have in this specific year.
+                    the baby report means sex, mental health(can exclude down syndrome),
+                    facial features and somatic features of the baby.
+                    The report also could be only that you cannot have a baby this year,
+                    all that is 100% sure and based on a scientific basis.
+                    if there is anything wrong with your baby's report,
+                    just send it to us and you will get your money back.</p>
+                <a href="prediction_form.html" class="btn">Start Prediction</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© All rights are preserved for Dr.I T.</p>
+    </footer>
+    <script src="scripts.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const userInfo = document.querySelector('.user-info');
+        const dropdownArrow = document.getElementById('dropdown-arrow');
+        const dropdownContent = document.getElementById('dropdown-content');
+
+        // Get user information from localStorage
+        const firstName = localStorage.getItem('userFirstName') || 'John';
+        const lastName = localStorage.getItem('userLastName') || 'Doe';
+        const email = localStorage.getItem('userEmail') || 'john.doe@example.com';
+
+        // Update header with user information
+        document.getElementById('user-initials').textContent = firstName.charAt(0) + lastName.charAt(0);
+        document.getElementById('user-full-name').textContent = firstName + ' ' + lastName;
+        document.getElementById('user-email').textContent = email;
+
+        userInfo.addEventListener('click', function() {
+            userInfo.classList.toggle('active');
+        });
+
+        // Close the dropdown if clicked outside
+        window.addEventListener('click', function(e) {
+            if (!userInfo.contains(e.target)) {
+                userInfo.classList.remove('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>
+

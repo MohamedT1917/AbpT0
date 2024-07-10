@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbpT - Prediction Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AbpT</h1>
+        </div>
+        <div class="user-info">
+            <div class="user-box">
+                <span id="user-initials">JD</span>
+                <span id="user-full-name">John Doe</span> <!-- Replace with dynamic user data -->
+                <i class="fas fa-chevron-down" id="dropdown-arrow"></i>
+            </div>
+            <div class="dropdown-content" id="dropdown-content">
+                <p id="user-email">john.doe@example.com</p>
+                <a href="profile.html" class="profile-link">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="prediction-form-section">
+            <div class="form-container">
+                <h2>Prediction Form</h2>
+                <form id="predictionForm">
+                    <label for="userWeight">Your Weight (kg):</label>
+                    <input type="number" id="userWeight" name="userWeight" required>
+
+                    <label for="partnerWeight">Partner's Weight (kg):</label>
+                    <input type="number" id="partnerWeight" name="partnerWeight" required>
+
+                    <label for="userHeight">Your Height (cm):</label>
+                    <input type="number" id="userHeight" name="userHeight" required>
+
+                    <label for="partnerHeight">Partner's Height (cm):</label>
+                    <input type="number" id="partnerHeight" name="partnerHeight" required>
+
+                    <label for="userBirthDate">Your Birth Date:</label>
+                    <input type="date" id="userBirthDate" name="userBirthDate" required>
+
+                    <label for="partnerBirthDate">Partner's Birth Date:</label>
+                    <input type="date" id="partnerBirthDate" name="partnerBirthDate" required>
+
+                    <label for="couplePhoto">Photo of the Couple:</label>
+                    <input type="file" id="couplePhoto" name="couplePhoto" accept="image/*" required>
+
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                    </select>
+
+                    <a href="confirmation.html" class="btn">Start Prediction</a>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© All rights are preserved for Dr.I T.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

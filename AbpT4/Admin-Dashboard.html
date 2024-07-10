@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - AbpT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AbpT Admin</h1>
+        </div>
+        <div class="admin-info">
+            <span id="admin-name">Admin Name</span>
+            <button id="logout">Logout</button>
+        </div>
+    </header>
+    <main>
+        <section class="dashboard-overview">
+            <h2>Dashboard Overview</h2>
+            <div class="stats">
+                <div class="stat">
+                    <h3>Pending Requests</h3>
+                    <p id="pending-requests">0</p>
+                </div>
+                <div class="stat">
+                    <h3>In-Progress Requests</h3>
+                    <p id="in-progress-requests">0</p>
+                </div>
+                <div class="stat">
+                    <h3>Completed Requests</h3>
+                    <p id="completed-requests">0</p>
+                </div>
+            </div>
+        </section>
+        <section class="request-management">
+            <h2>Request Management</h2>
+            <table id="requests-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Weight (kg)</th>
+                        <th>Partner's Weight (kg)</th>
+                        <th>Height (cm)</th>
+                        <th>Partner's Height (cm)</th>
+                        <th>Birth Date</th>
+                        <th>Partner's Birth Date</th>
+                        <th>Photo of Couple</th>
+                        <th>Payment Method</th>
+                        <th>Payment Status</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Requests will be dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© All rights are preserved for Dr.I T.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

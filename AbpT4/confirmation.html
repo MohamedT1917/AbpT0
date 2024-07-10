@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbpT - Prediction Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AbpT</h1>
+        </div>
+        <div class="user-info">
+            <div class="user-box">
+                <span id="user-initials">JD</span>
+                <span id="user-full-name">John Doe</span> <!-- Replace with dynamic user data -->
+                <i class="fas fa-chevron-down" id="dropdown-arrow"></i>
+            </div>
+            <div class="dropdown-content" id="dropdown-content">
+                <p id="user-email">john.doe@example.com</p>
+                <a href="profile.html" class="profile-link">
+                    <i class="fas fa-user"></i> Profile
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="confirmation-section">
+            <div class="confirmation-container">
+                <h2>Prediction Request Submitted</h2>
+                <p>Thank you for submitting your prediction request.</p>
+                <p>Please wait patiently for 5-7 days for the results to be processed. You can check the status of your request at any time by logging into your profile.</p>
+                
+                <div class="progress-tracker">
+                    <div class="tracker-step">
+                        <div class="tracker-icon"><i class="fas fa-file-alt"></i></div>
+                        <p>Request Submitted</p>
+                    </div>
+                    <div class="tracker-step">
+                        <div class="tracker-icon"><i class="fas fa-cogs"></i></div>
+                        <p>Processing</p>
+                    </div>
+                    <div class="tracker-step">
+                        <div class="tracker-icon"><i class="fas fa-check-circle"></i></div>
+                        <p>Completed</p>
+                    </div>
+                </div>
+                
+                <p>Meanwhile, you can explore more about our services or return to the home page.</p>
+                <a href="home.html" class="btn">Back to Home</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© All rights are preserved for Dr.I T.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
